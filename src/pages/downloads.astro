@@ -1,0 +1,33 @@
+---
+// src/pages/downloads.astro
+import { fetchDownloads } from '../lib/downloads';
+
+const downloads = await fetchDownloads();
+---
+
+<html lang="ko">
+  <head>
+    <title>자료실 - dndsolution</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h1>📂 자료실</h1>
+
+    {downloads.length === 0 ? (
+      <p>등록된 자료가 없습니다.</p>
+    ) : (
+      <ul>
+        {downloads.map((item) => (
+          <li style="margin-bottom: 2rem;">
+            <h2>{item.name}</h2>
+            <p>{item.description}</p>
+            <p><strong>버전:</strong> {item.version} | <strong>날짜:</strong> {item.date}</p>
+            <a href={item.fileUrl} target="_blank" download>
+              🔽 다운로드
+            </a>
+          </li>
+        ))}
+      </ul>
+    )}
+  </body>
+</html>

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "tool001",
+    "name": "시스템 리소스 최적화 도구",
+    "description": "윈도우 환경에서 리소스를 자동으로 정리해주는 툴입니다.",
+    "version": "v1.0.0",
+    "date": "2025-04-10",
+    "fileUrl": "https://firebasestorage.googleapis.com/v0/b/your-project-id.appspot.com/o/downloads%2Foptimizer_v1.exe?alt=media"
+  },
+  {
+    "id": "tool002",
+    "name": "네트워크 진단 유틸리티",
+    "description": "Ping, Traceroute, DNS Lookup 등을 지원하는 네트워크 툴입니다.",
+    "version": "v2.1.5",
+    "date": "2025-04-11",
+    "fileUrl": "https://firebasestorage.googleapis.com/v0/b/your-project-id.appspot.com/o/downloads%2Fnetdiag_v2.exe?alt=media"
+  }
+]
